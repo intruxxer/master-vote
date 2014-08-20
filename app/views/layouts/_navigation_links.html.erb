@@ -1,13 +1,38 @@
-<%# add navigation links to this file %>
-<% if user_signed_in? %>
-  <li><%= link_to 'Edit account', edit_user_registration_path %></li>
-  <li><%= link_to 'Sign out', destroy_user_session_path, :method=>'delete' %></li>
-<% else %>
-  <li><%= link_to 'Sign in', new_user_session_path %></li>
-  <li><%= link_to 'Sign up', new_user_registration_path %></li>
-<% end %>
-<% if user_signed_in? %>
-  <% if current_user.admin? %>
-    <li><%= link_to 'Users', users_path %></li>
-  <% end %>
-<% end %>
+<li class="active"><%= link_to 'Beranda', root_path %></li>
+<li class="has-children"><a href="#">Strategi Kampanye</a>
+  <ul>
+	<li><%= link_to 'Jadwal Kampanye', root_path %></li>
+	<li><%= link_to 'Peta Kampanye', root_path %></li>
+	<li class="has-children"><a href="#">Distribusi Suara</a>
+	  <ul>
+		 <li><a href="#">Sukaraja</a></li>
+		 <li><a href="#">Air Periukan</a></li>
+		 <li><a href="#">Seluma Barat</a></li>
+		 <li><a href="#">Semidang Alas Maras</a></li>
+	  </ul></li>
+    <li class="has-children"><a href="#">Daftar Tokoh</a>
+	  <ul>
+		 <li><a href="#">Sukaraja</a></li>
+		 <li><a href="#">Air Periukan</a></li>
+		 <li><a href="#">Seluma Barat</a></li>
+		 <li><a href="#">Semidang Alas Maras</a></li>
+	  </ul></li>
+  </ul></li>
+<li class="has-children"><%= link_to 'Catatan & Kronologi', root_path %>
+  <ul>
+	<li><%= link_to 'Berita Terbaru Daerah', root_path %></li>
+	<li class="has-children"><%= link_to 'Kampanye Timses', root_path %>
+	  <ul>
+	    <li><a href="#">Sukaraja</a></li>
+	    <li><a href="#">Air Periukan</a></li>
+	  </ul></li>
+	<li class="has-children"><%= link_to 'Anggota Timses', root_path %>
+	  <ul>
+	    <li><a href="#">Pengurus Harian</a></li>
+	    <li><a href="#">Juru Kampanye</a></li>
+	    <li><a href="#">Protokoler</a></li>
+	    <li><a href="#">Public Relation (PR)</a></li>
+	  </ul></li>
+  </ul></li>
+<li><%= link_to 'Field Notes', fieldnotes_path %></li>
+<li><%= link_to 'Team Notes', teamnotes_path %></li>

@@ -1,0 +1,566 @@
+<!--[if IE ]><![endif]-->
+<!doctype html>
+<!--[if lt IE 8]> <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]> <html class="no-js lt-ie9 ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html class="no-js lt-ie10 ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+ <title>sideWaze: 240px and Up Wrapper</title>
+ 
+ <!-- Bootstrap core CSS use 3.x framework :: this is a custom base made with the customizer :: screen shot and .json included  -->
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+ <!-- Way Better Bootstrap Modals INSTRUCTIONS: https://github.com/jschr/bootstrap-modal/ -->
+ <!-- DEMO:: http://jschr.github.io/bootstrap-modal/bs3.html -->
+<link href="assets/css/bootstrap-modal.css" rel="stylesheet" type="text/css">
+
+ <!-- Google Fonts -->
+ <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500,700' rel='stylesheet' type='text/css'>
+ <link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative' rel='stylesheet' type='text/css'> 
+
+ <!-- Wrapper and Supporting Styles -->
+ <link href="assets/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/sidewaze_columns.css" rel="stylesheet" type="text/css">
+ <link href="assets/css/sidewaze_base.css" rel="stylesheet" type="text/css">
+ 
+ <!-- ####### Put your color css last class 'base-color' is only used for demo ######### -->
+ <link href="assets/css/colors/sidewaze_base_color.css" class="base-color" rel="stylesheet" type="text/css">
+ 
+ 
+ <!-- SCRIPTS IN HEAD ============================================== -->
+ 
+ <script src="assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+ 
+ <!--	NOTE:: jquery 2.x does not support IE 8 so version 1.9.1 is used for older versions of IE
+				:: calling jQuery in the head for ajax work if necessary.
+				-->
+ <!--[if gt IE 8]><!-->
+		<script src="assets/js/jquery.min.2.0.3.js"></script>
+		<!--<![endif]-->
+ <!--[if lt IE 9]>
+		<script src="assets/js/1.9.1-jquery.min.js"></script>
+		<![endif]-->
+ 
+ <!-- WINDOWS 8 Phones BUG FIX -->
+ <script src="assets/js/windows-fix.js"></script>
+
+
+ <!--[if lt IE 9]>
+  <script type="text/javascript" src="assets/js/selectivizr.js"></script>
+<![endif]-->
+
+
+ 
+<!-- ========= GENERATE CODE AND TOUCH ICONS http://iconifier.net/ =========== -->
+
+
+</head>
+
+
+<body>
+
+<!-- accessibility skip to nav skip content -->
+<ul class="sr-only" id="top">
+ <li><a href="blog.html#nav" title="Skip to navigation" accesskey="n">Skip to Navigation</a></li>
+ <li><a href="blog.html#page" title="Skip to content" accesskey="c">Skip to Content</a></li>
+</ul>
+<!--  /.sr-only accessibility-->
+
+
+ <!-- ____________ Navigation Column _______________  -->
+ 
+<div class="nav-col">
+ 
+ <!-- ____________ User Wrapper for login and sign up links _______________  -->
+ 
+ <nav id="nav" class="clearfix" role="navigation">
+ 
+  <div class="user-wrapper">
+   <p><a href="blog.html#login-modal" data-toggle="modal" class="toggle-login"> <i class="fa fa-sign-in"></i>&nbsp;&nbsp;Login</a> <span class="v-divider"></span> <a href="blog.html#signup-modal" data-toggle="modal" class="toggle-signup"> <i class="fa fa-pencil"></i>&nbsp;&nbsp;Sign Up</a> </p>
+  </div>
+  
+ <!-- ____________ Primary Menu _______________  -->
+    <!-- TO KEEP OPEN WHEN ON THAT SECTION add class "active" to the a tag of the parent li 
+    (the one with the .has-children class on it) <li class="has-children"><a href="#" class="active" ... -->
+
+  <ul class="primary-nav">   
+   <li><a href="index.html">Home</a></li>
+   <!-- add class .active on li item when the page is current -->
+   <li><a href="your-link-here.html">About</a></li>
+   <li class="has-children"><a href="blog.html#">Portfolio</a> <!-- add class .has-children on li item if the li has babies -->
+    <ul>
+     <li><a href="your-link-here.html">Portfolio Child Link 1</a></li>
+     <li><a href="your-link-here.html">Portfolio Child Link 2</a></li>
+     <li class="has-children"><a href="blog.html#">Portfolio Child w/Child Trigger</a>
+      <ul>
+       <li><a href="your-link-here.html">Portfolio Grand Child Link 1</a></li>
+       <li><a href="your-link-here.html">Portfolio Grand Child Link 2</a></li>
+      </ul>
+     </li>
+     <li><a href="your-link-here.html">Portfolio Child Link 3</a></li>
+     <li><a href="your-link-here.html">Portfolio Child Link 4</a></li>
+    </ul>
+   </li>
+   <li class="has-children"><a href="blog.html#">Services</a>
+    <ul>
+     <li><a href="your-link-here.html">Services Child Link 1</a></li>
+     <li><a href="your-link-here.html">Services Child Link 2</a></li>
+     <li class="has-children"><a href="blog.html#">Services Child w/Child Trigger</a>
+      <ul>
+       <li><a href="your-link-here.html">Services Grand Child Link 1</a></li>
+       <li><a href="your-link-here.html">Services Grand Child Link 2</a></li>
+      </ul>
+     </li>
+     <li><a href="your-link-here.html">Services Child Link 3</a></li>
+     <li><a href="your-link-here.html">Services Child Link 4</a></li>
+    </ul>
+   </li>
+   <li class="active"><a href="blog.html">Blog</a></li>
+   <li><a href="your-link-here.html">Bootstrap</a></li>
+  </ul>
+ </nav>
+</div>
+<!-- /.nav-col --> 
+
+
+<!-- ____________ Logo Column (search and social follow) _______________  -->
+ 
+<div class="logo-col">
+ <a href="blog.html#" class="toggle-menu"><i class="fa fa-bars"></i></a> 
+ 
+ <!-- ____________ LOGO _______________  -->
+ <div class="logo-wrapper">
+  <a href="blog.html#" class="clearfix"> <img id="logo" src="assets/images/logo.png" alt="company name"> </a>
+ </div>
+ <!-- /logo-wrapper -->
+
+  <!-- ____________ SEARCH WRAPPER _______________  -->
+ <div class="search-wrapper">
+  <a href="blog.html#" class="toggle-search tooltip-hover" title="search" data-placement="left"><i class="fa fa-search"></i></a> 
+  
+  <!--  SEARCH PANEL -->
+  <div class="search-panel">
+   <form role="form">
+    <input type="search" placeholder="Enter search term and press enter" class="form-control">
+   </form>
+  </div> 
+ </div>
+ <!-- /search-wrapper -->
+
+
+  <!-- ____________ SOCIAL WRAPPER _______________  -->
+ <div class="social-wrapper">
+  <ul>
+   <li><a href="blog.html#" class="fa fa-facebook tooltip-hover" data-placement="left" title="Follow Us on Facebook"></a></li>
+   <li><a href="blog.html#" class="fa fa-google-plus tooltip-hover" data-placement="left" title="Follow Us on Google Plus"></a></li>
+   <li><a href="blog.html#" class="fa fa-twitter tooltip-hover" data-placement="left" title="Follow Us on Twitter"></a></li>
+   <li><a href="blog.html#" class="fa fa-github tooltip-hover" data-placement="left" title="Visit our GitHub Page"></a></li>
+   <li><a href="blog.html#" class="fa fa-linkedin tooltip-hover" data-placement="left" title="Follow Us on LinkedIn"></a></li>
+   <li><a href="blog.html#" class="fa fa-instagram tooltip-hover" data-placement="left" title="Follow Us on Instagram"></a></li>
+   <li><a href="blog.html#" class="fa fa-rss tooltip-hover" data-placement="left" title="Subscribe to Our RSS Feed"></a></li>
+  </ul>
+  <!-- .social -->
+ </div>
+</div>
+<!-- /.logo-col --> 
+
+
+
+<!-- ____________ CONTENT COLUMN _______________  -->
+
+<div class="content-col blog-page" id="page">
+ <!-- notice class ".blog-page" -->
+ 
+ <div class="inner-content" >
+  <!-- DO NOT USE .container or .container-fluid with this framework -->
+  
+  <h1 class="font-weight-thin no-margin-top">This is the title to a blog post</h1>
+  <hr class="hidden-xs">
+  <p class="meta"> by: Hermione Granger  / date: 24 March 2015  / Category: <a href="blog.html#" class="text-underline">Something</a> </p>
+  </p>
+  <hr class="hidden-xs">
+  
+  <!-- this is hidden at small sizes and is found on the top of the content -->
+  <h6 class="visible-xs-inline-block no-margin-top no-margin-bottom uppercase">Share: &nbsp;</h6>
+  <ul class="list-inline visible-xs-inline-block">
+   <li><a href="blog.html#" class="fa fa-facebook tooltip-hover" data-placement="top" title="Share on Facebook"></a></li>
+   <li><a href="blog.html#" class="fa fa-google-plus tooltip-hover" data-placement="top" title="Share on Google Plus"></a></li>
+   <li><a href="blog.html#" class="fa fa-twitter tooltip-hover" data-placement="top" title="Share on Twitter"></a></li>
+   <li><a href="blog.html#" class="fa fa-linkedin tooltip-hover" data-placement="top" title="Share on Linkedin"></a></li>
+   <li><a href="blog.html#" class="fa fa-instagram tooltip-hover" data-placement="top" title="Share on Instagram"></a></li>
+  </ul>
+  
+  <hr class="visible-xs">
+  
+  <div class="row">
+   <article class="col-sm-9 clearfix">
+    <p class="lead"><strong>Example blog post layout</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget.</p>
+    <figure class="blog-img-left"> <img src="assets/demo-images/4180676190.jpg" class="img-responsive img-custom" alt=""/>
+     <figcaption>credit: <a href="http://www.flickr.com/photos/davefayram/4180676190/">DaveFayram</a> via <a href="http://photopin.com">photopin</a> <a href="http://creativecommons.org/licenses/by/2.0/">cc</a></figcaption>
+    </figure>
+    <p> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, <a href="blog.html#" class="text-underline">donec non enim</a> tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus </p>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+    <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. </p>
+    <h2>Header Level 2</h2>
+    <ol>
+     <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+     <li>Aliquam tincidunt mauris eu risus.</li>
+    </ol>
+    <blockquote>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
+    </blockquote>
+    <h3>Header Level 3</h3>
+    <ul>
+     <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+     <li>Aliquam tincidunt mauris eu risus.</li>
+    </ul>
+    <pre><code>
+#header h1 a { 
+	display: block; 
+	width: 300px; 
+	height: 80px; 
+}
+</code></pre>
+   </article>
+   <!--/.col-sm-8 -->
+   
+   <hr class="vertical-spacer visible-xs">
+   <aside class="col-sm-3"> 
+    
+    <!-- this is hidden at small sizes and is found on the top of the content -->
+    <h6 class="hidden-xs">Share</h6>
+    <ul class="list-inline hidden-xs">
+     <li><a href="blog.html#" class="fa fa-facebook tooltip-hover" data-placement="top" title="Share on Facebook"></a></li>
+     <li><a href="blog.html#" class="fa fa-google-plus tooltip-hover" data-placement="top" title="Share on Google Plus"></a></li>
+     <li><a href="blog.html#" class="fa fa-twitter tooltip-hover" data-placement="top" title="Share on Twitter"></a></li>
+     <li><a href="blog.html#" class="fa fa-linkedin tooltip-hover" data-placement="top" title="Share on Linkedin"></a></li>
+     <li><a href="blog.html#" class="fa fa-instagram tooltip-hover" data-placement="top" title="Share on Instagram"></a></li>
+    </ul>
+
+   <hr class="vertical-spacer visible-xs">
+   
+	<section class="tags">
+      <h6 class="spaced-out-header uppercase display-inline-block">Tags</h6>
+      <a href="blog.html#" class="label label-default">Something</a> <a href="blog.html#" class="label label-default">Else</a>
+      <a href="blog.html#" class="label label-default">Peace</a> <a href="blog.html#" class="label label-default">Sublime</a>
+      <a href="blog.html#" class="label label-default">Fresh</a> <a href="blog.html#" class="label label-default">Default</a>
+      </section>
+      
+   <hr class="vertical-spacer">
+   
+    <div class="well well-sm">
+    <h6>Related</h6>
+    <ul class="list-unstyled">
+     <li><a href="blog.html#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></li>
+     <li><a href="blog.html#">Aliquam tincidunt mauris eu risus.</a></li>
+     <li><a href="blog.html#">Vestibulum auctor dapibus neque.</a></li>
+     </div>
+    </ul>
+    <div class="well well-sm">
+    <h6>Popular</h6>
+    <ul class="list-unstyled">
+     <li><a href="blog.html#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></li>
+     <li><a href="blog.html#">Aliquam tincidunt mauris eu risus.</a></li>
+     <li><a href="blog.html#">Vestibulum auctor dapibus neque.</a></li>
+     </div>
+    </ul>
+   </aside>
+   <!--/.col-sm-4-->
+   
+  </div>
+  <!-- /.row -->
+  
+ </div>
+ <!--/inner-content -->
+ 
+</div>
+<!--/content-col --> 
+
+
+<!-- ______________ Footer Column :: jQuery to make equal heights from 901px - 1199px ______________ -->
+
+<footer class="footer footer-col clearfix">
+ <div class="footer-content-1">
+  <div class="inner-content">
+   <h5>Contact Us</h5>
+   
+   <p class="no-margin-bottom">
+   Responsive Heads Up<br>
+   1255 Nowhere Street<br>
+   Tampa, FL 33655<br>
+   <strong>phone:</strong> <a class="text-underline" href="tel:8135551234">813.555.1234</a><br>
+   <strong>fax:</strong> 813.555.1235<br>
+   <span class="overflow"><strong>email:</strong> <a  class="text-underline" href="mailto:email@domain.com">email@companydomain.com</a></span>
+   </p>
+   
+  </div>
+  <!--/.inner-content-->
+ </div>
+ <!--/.footer-col-1 -->
+ 
+ <hr class="divider">
+ 
+ <div class="footer-content-2">
+  <div class="inner-content">
+   <h5>Stay Updated</h5>
+   <p>Sign up for our newsletter. We won't share your email address.</p>
+   <form action="http://bombdiggitydesign.com/wrap-n-roll/sidewaze/yourscript.php" method="post">
+    <div class="input-group input-group-sm footer-signup">
+     <input class="form-control" placeholder="Your@EmailAddress.com" type="email">
+     <span class="input-group-btn">
+     <button type="submit" class="btn btn-primary">Sign Up</button>
+     </span> 
+     <!--/.input-group-->
+    </div>
+   </form>
+  </div>
+  <!--/.inner-content-->
+ </div>
+ <!--/.footer-col-2 -->
+ 
+ <hr class="divider">
+ 
+ <div class="footer-content-3">
+  <div class="inner-content">
+   <h5>Recent Images</h5>
+    <div class="img-widget clearfix">
+        <a href="blog.html#"><img src="../middle/assets/demo-images/florence-341469_150.jpg" alt="" /></a>
+        <a href="blog.html#"><img src="../middle/assets/demo-images/frankfurt-285607_150.jpg" alt="" /></a>
+        <a href="blog.html#"><img src="../middle/assets/demo-images/home-22527_150.jpg" alt="" /></a>
+        <a href="blog.html#"><img src="../middle/assets/demo-images/milwaukee-art-museum-3984_150.jpg" alt="" /></a>
+        <a href="blog.html#"><img src="../middle/assets/demo-images/reichstag-366201_150.jpg" alt="" /></a>
+        <a href="blog.html#"><img src="../middle/assets/demo-images/stairs-8443_150.jpg" alt="" /></a>
+        <a href="blog.html#"><img src="../middle/assets/demo-images/stairs-63747_150.jpg" alt="" /></a>
+        <a href="blog.html#"><img src="../middle/assets/demo-images/stairs-113610_150.jpg" alt="" /></a>
+        <a href="blog.html#"><img src="../middle/assets/demo-images/us-capitol-325341_150.jpg" alt="" /></a>
+        <a href="blog.html#"><img src="../middle/assets/demo-images/vaulted-cellar-247391_150.jpg" alt="" /></a>
+    </div>
+    <!--/.img-widget-->   
+  </div>
+  <!--/.inner-content-->
+ </div>
+ <!--/.footer-col-3 -->
+ 
+ <hr class="divider">
+ <div class="footer-content-4">
+  <div class="inner-content">
+   <h5>Latest Articles</h5>
+   <ul class="article-list"> 
+    <li><a href="http://bombdiggitydesign.com/wrap-n-roll/sidewaze/your-link-goes-here.html">We will amplify our power to benchmark</a></li>
+    <li><a href="http://bombdiggitydesign.com/wrap-n-roll/sidewaze/your-link-goes-here.html">We have revolutionized the conceptualization of structuring</a></li>
+    <li><a href="http://bombdiggitydesign.com/wrap-n-roll/sidewaze/your-link-goes-here.html">Everything is relative; relatively speaking.</a></li>
+    <li><a href="http://bombdiggitydesign.com/wrap-n-roll/sidewaze/your-link-goes-here.html">My other body is an immortal robot body.</a></li>
+    <li><a href="http://bombdiggitydesign.com/wrap-n-roll/sidewaze/your-link-goes-here.html">I don't know who they are but they're right behind you</a></li>
+    <li><a href="http://bombdiggitydesign.com/wrap-n-roll/sidewaze/your-link-goes-here.html">For those about to rock, we salute you </a> </li>
+   </ul>
+  </div>
+  <!--/.inner-content-->
+ </div>
+ <!--/.footer-col-4 -->
+ 
+ <hr class="divider">
+ <div class="inner-content copyright">
+  <p class="small">© Copyright 2014 Christina Arasmo Beymer. 
+   All rights reserved. Please purchase this wrapper so you can use it in your project. 
+   Email <a href="mailto:christinabeymer@gmail.com" class="text-underline">the designer.</a> </p>
+ </div>
+ <!--/.inner-content--> 
+ 
+</footer>
+<!--/footer-col --> 
+
+<!-- ______________ END FOOTER ______________ --> 
+
+<!-- _________ FAUX COLUMNS ________ -->
+
+<div class="faux-col faux-nav-col">
+</div>
+<div class="faux-col faux-logo-col">
+</div>
+<div class="faux-col faux-content-col">
+</div>
+<div class="faux-col faux-footer-col">
+</div>
+
+<!--to top --> 
+<a id="go-to-top" title="up"> <i class="fa fa-arrow-circle-o-up"></i> </a> 
+
+<!-- this ends the site content and begins the modals for sign up and login --> 
+
+<!-- ____________ LOGIN MODAL _______________  -->
+
+<div id="login-modal" class="modal fade user-modal" tabindex="-1" data-width="760" style="display: none;">
+ <div class="modal-header">
+  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+ </div>
+ <div class="modal-body">
+  <div class="row">
+   
+   <!-- col-ms-6 non-bootstrap column for 600px - 767px -->
+   <div class="col-sm-6 col-ms-6">
+    <h4 class="title">Social Login</h4>
+    <ul class="list-unstyled social-user">
+     <li><a href="blog.html#" title="Login with Facebook" class="facebook"><i class="fa fa-facebook"></i><span>Login with Facebook</span></a></li>
+     <li><a href="blog.html#" title="Login with Google Plus" class="google"><i class="fa fa-google-plus"></i><span>Login with Google</span></a></li>
+     <li><a href="blog.html#" title="Login with Twitter" class="twitter"><i class="fa fa-twitter"></i><span>Login with Twitter</span></a></li>
+     <li><a href="blog.html#" title="Login with Wordpress" class="wordpress"><i class="fa fa-wordpress"></i><span>Login with Wordpress</span></a></li>
+    </ul>
+    <!-- /.social-user -->
+   </div>
+   <!-- /col-sm-6 col-ms-6--> 
+   
+   <!-- col-ms-6 non-bootstrap column for 600px - 767px -->
+   <div class="col-sm-6 col-ms-6">
+    <h4 class="title">Sign In</h4>
+    <form role="form" action="http://bombdiggitydesign.com/wrap-n-roll/sidewaze/your-login-script-goes-here.php">
+     <div class="form-group">
+      <input type="email" class="form-control" placeholder="Enter email">
+     </div>
+     <div class="form-group">
+      <input type="password" class="form-control" placeholder="Password">
+     </div>
+     <div class="form-group checkbox small">
+      <label>
+       <input type="checkbox">
+       Remember Me </label>
+     </div>
+     <p class="text-center">
+      <button class="btn btn-default btn-custom" type="submit"><i class="fa fa-lock"></i> Sign in</button>
+     </p>
+    </form>
+   </div>
+   <!-- /col-sm-6 col-ms-6-->
+   
+  </div>
+  <!-- /.row-->
+  
+    <p class="text-center"><a class="text-underline" href="your-link-here.html">Forgot your password?</a> <br>
+     Don't have an account yet? <a class="text-underline" href="blog.html#signup-modal" data-toggle="modal" data-dismiss="modal">Sign up</a> </p>
+  
+ </div>
+ <!-- /.modal-body-->
+</div>
+<!-- /.modal #login-modal --> 
+
+<!-- ____________ SIGNUP MODAL _______________  -->
+
+<div id="signup-modal" class="modal fade user-modal" tabindex="-1" data-width="760" style="display: none;">
+ <div class="modal-header">
+  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+ </div>
+ <div class="modal-body">
+  <div class="row">
+   
+   <!-- col-ms-6 non-bootstrap column for 600px - 767px -->
+   <div class="col-sm-6  col-ms-6">
+    <h4 class="title">Sign Up with...</h4>
+    <ul class="list-unstyled social-user">
+     <li><a href="blog.html#" title="Signup with Facebook" class="facebook"><i class="fa fa-facebook"></i><span>Signup with Facebook</span></a></li>
+     <li><a href="blog.html#" title="Signup with Google Plus" class="google"><i class="fa fa-google-plus"></i><span>Signup with Google</span></a></li>
+     <li><a href="blog.html#" title="Signup with Twitter" class="twitter"><i class="fa fa-twitter"></i><span>Signup with Twitter</span></a></li>
+     <li><a href="blog.html#" title="Signup with Wordpress" class="wordpress"><i class="fa fa-wordpress"></i><span>Signup with Wordpress</span></a></li>
+    </ul>
+    <!-- /.social-user -->
+   </div>
+   <!-- /col-sm-6 col-ms-6--> 
+   
+   <!-- col-ms-6 non-bootstrap column for 600px - 767px -->
+   <div class="col-sm-6 col-ms-6">
+    <h4 class="title">Sign Up</h4>
+    <form role="form" action="http://bombdiggitydesign.com/wrap-n-roll/sidewaze/your-registrtation-script-goes-here.php">
+     <div class="form-group">
+      <input type="email" class="form-control" placeholder="Enter email">
+     </div>
+     <div class="form-group">
+      <input type="password" class="form-control" placeholder="Password">
+     </div>
+     <p class="text-center">
+      <button class="btn btn-default btn-custom" type="submit"><i class="fa fa-lock"></i> Register</button>
+     </p>
+    </form>
+   </div>
+   <!-- /col-sm-6 col-ms-6-->
+   
+  </div>
+  <!-- /.row-->
+  
+      <p class="text-center">Already have an account? <a class="text-underline" href="blog.html#login-modal" data-toggle="modal" data-dismiss="modal">Login</a></p>
+
+  
+ </div>
+ <!-- /.modal-body-->
+</div>
+<!-- /.modal #signup-modal --> 
+
+
+<!-- _________ FOOTER SCRIPTS ________ --> 
+
+<script src="assets/js/bootstrap.min.js"></script> 
+<script src="assets/js/jquery.sidewaze_base.js"></script> 
+
+<!-- Way Better Bootstrap Modals INSTRUCTIONS: https://github.com/jschr/bootstrap-modal/ --> 
+<!-- DEMO:: http://jschr.github.io/bootstrap-modal/bs3.html --> 
+<script src="assets/js/bootstrap-modalmanager.js"></script> 
+<script src="assets/js/bootstrap-modal.js"></script> 
+
+<!-- Responsive Carousel LEARN IT HERE: http://www.owlgraphic.com/owlcarousel/demos/custom.html--> 
+<script src="assets/owl-carousel/owl.carousel.min.js"></script> 
+<script>
+     $(document).ready(function() {
+        $(".multi-slider").owlCarousel({
+        lazyLoad : true,
+        navigation : false,
+        pagination: true,
+        items : 4, 
+        itemsDesktop : [1400,4],
+        itemsDesktopSmall : [900,3], 
+        itemsTablet: [600,2], 
+        itemsMobile : [320,1]
+    });
+ });
+</script>
+
+
+<!-- ====== STYLE SWITCHER REMOVE FROM YOUR FINAL SITE ========= --> 
+
+<!--[if (gte IE 10)|!(IE)]><!-->
+
+<div id="switcher-wrapper">
+ <div class="toggle">
+  <i class="fa fa-cog fa-spin"></i>
+ </div>
+ <div id="switcher">
+  <section>
+   <h3>Choose A Color Scheme</h3>
+   <div class="colors clearfix">
+    <a class="reset active" id="base" href="blog.html#" title="base"><span></span><span></span></a>
+    <a id="soft-gray" href="blog.html#" title="Soft Gray"><span></span><span></span></a>
+    <a id="stone" href="blog.html#" title="Stone"><span></span><span></span></a>
+    <a id="blue" href="blog.html#" title="Blue"><span></span><span></span></a>
+    <a id="teal" href="blog.html#" title="Teal"><span></span><span></span></a>
+    <a id="mustard-gray" href="blog.html#" title="Mustard and Dark Gray"><span></span><span></span></a>
+    <a id="salmon-gray" href="blog.html#" title="Salmon and Dark Gray"><span></span><span></span></a>
+    <a id="green-gray" href="blog.html#" title="Green and Dark Gray"><span></span><span></span></a>
+   </div>
+   <p><a class="button color-reset" href="javascript: void(0)" title="Reset">Color Reset</a></p>
+    </section>      
+ </div>
+</div>
+<!--*****************Theme switcher html *********************--> 
+
+<script src="assets/switcher/switcher.js"></script>  
+
+
+<!--<![endif]--> 
+
+<!-- ====== STYLE SWITCHER REMOVE FROM YOUR FINAL SITE ========= --> 
+
+</body>
+</html>

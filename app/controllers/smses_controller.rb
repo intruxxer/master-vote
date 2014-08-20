@@ -1,0 +1,2 @@
+class SmsesController < ApplicationController
+end
